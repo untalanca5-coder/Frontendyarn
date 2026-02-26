@@ -12,7 +12,8 @@ function getUser() {
   .then(data=>{
     console.log(data);
     data.forEach(element=>{
-      html+=`<li>${element.price} ${element.name}${element.image}</li>`;
+      html+=`<li><img= src={element.image} style ="width=50px" >
+      ${element.price} ${element.name}</li>`;
     })
     content.innerHTML = html;
   })
@@ -21,4 +22,5 @@ function getUser() {
 
 
     
+
 
