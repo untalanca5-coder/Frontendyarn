@@ -12,7 +12,7 @@ function getUser() {
   .then(data=>{
     console.log(data);
     data.forEach(element=>{
-      html+=`<li>${element.price} ${element.name}${element.image</li>`;
+      html+=`<li>${element.price} ${element.name}${element.image}</li>`;
     })
     content.innerHTML = html;
   })
@@ -21,3 +21,4 @@ function getUser() {
 
 
     
+
